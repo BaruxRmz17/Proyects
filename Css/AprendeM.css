@@ -1,0 +1,95 @@
+h1 {
+    margin: 50px 0;
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+}
+
+
+.learn-section {
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo aumentado para acomodar más columnas */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Crea columnas responsivas */
+    gap: 30px; /* Espacio entre las tarjetas */
+    padding: 0 20px; /* Agrega un poco de espacio lateral */
+}
+
+.learn-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: border 0.3s, box-shadow 0.3s; /* Agrega una transición para el efecto hover */
+    border: 2px solid transparent; /* Añade un borde transparente por defecto */
+}
+
+.learn-item:hover {
+    border: 2px solid #007f5f; /* Cambia el borde al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
+}
+
+.learn-item h2 {
+    font-size: 24px;
+    color: #007f5f;
+    margin-bottom: 10px;
+}
+
+.learn-item p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.video-container {
+    margin-top: 15px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px; /* Proporción de 16:9 */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Media queries para ajustes responsivos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+        margin: 30px 0;
+    }
+    .learn-section {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Se reduce el ancho mínimo */
+        gap: 20px;
+    }
+    .learn-item h2 {
+        font-size: 20px;
+    }
+    .learn-item p {
+        font-size: 14px;
+    }
+    .video-container iframe {
+        height: 250px; /* Reduce el tamaño del iframe en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+    .learn-section {
+        grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    }
+    .learn-item h2 {
+        font-size: 18px;
+    }
+    .learn-item p {
+        font-size: 14px;
+    }
+    .video-container iframe {
+        height: 200px;
+    }
+}

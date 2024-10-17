@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Css/Menu_Footer.css">
+    <link rel="stylesheet" href="Css/test.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="Images/Logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Nuestros Productos</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+                <li><a href="AprendeM.html">Aprende más</a></li>
+                <li><a href="chatbot.html">ChatBot</a></li>
+                <li><a href="https://www.ococalli.com/">Ococalli Oficial</a></li>
+            </ul>
+        </nav>
+    </header>
+<br><br><br><br><br><br><br>
+<div class="container">
+    <h1>Test de Agroecología</h1>
+    <form id="quizForm">
+        <div class="question">
+            <p>1. ¿Qué es la agroecología?</p>
+            <input type="radio" name="q1" value="incorrect">Una rama de la agricultura convencional<br>
+            <input type="radio" name="q1" value="correct">Un enfoque sostenible de producción agrícola<br>
+            <input type="radio" name="q1" value="incorrect">Una técnica de cultivo intensivo<br>
+        </div>
+
+        <div class="question">
+            <p>2. ¿Qué elemento es fundamental en la agroecología?</p>
+            <input type="radio" name="q2" value="incorrect">Uso de fertilizantes químicos<br>
+            <input type="radio" name="q2" value="correct">Diversidad de cultivos<br>
+            <input type="radio" name="q2" value="incorrect">Monocultivos<br>
+        </div>
+
+        <div class="question">
+            <p>3. ¿Cuál es uno de los principales beneficios de la agroecología?</p>
+            <input type="radio" name="q3" value="correct">Mejora la biodiversidad<br>
+            <input type="radio" name="q3" value="incorrect">Aumenta el uso de pesticidas<br>
+            <input type="radio" name="q3" value="incorrect">Reduce la rotación de cultivos<br>
+        </div>
+
+        <div class="question">
+            <p>4. ¿Cómo se minimizan las plagas en la agroecología?</p>
+            <input type="radio" name="q4" value="correct">A través del control biológico<br>
+            <input type="radio" name="q4" value="incorrect">Usando pesticidas sintéticos<br>
+            <input type="radio" name="q4" value="incorrect">Aumentando los monocultivos<br>
+        </div>
+
+        <div class="question">
+            <p>5. ¿Qué busca principalmente la agroecología?</p>
+            <input type="radio" name="q5" value="incorrect">Maximizar la producción a corto plazo<br>
+            <input type="radio" name="q5" value="correct">Promover la sostenibilidad ambiental<br>
+            <input type="radio" name="q5" value="incorrect">Utilizar tecnologías transgénicas<br>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Enviar</button>
+        <button type="button" id="resetBtn" onclick="resetQuiz()" style="display:none;">Reiniciar</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+    <script src="Js/test.js"></script>
+
+    
+<br><br>
+    <footer>
+        <div class="footer-logo">
+            <a href="index.html"><img src="Images/Logo.png" alt="Logo"></a>
+        </div>
+        <p class ="footer">&copy; 2024 Ococalli. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

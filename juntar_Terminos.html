@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinanza Agroecológica</title>
+    <link rel="stylesheet" href="Css/juntar_Terminos.css">
+    <link rel="stylesheet" href="Css/Menu_Footer.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="Images/Logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Nuestros Productos</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+                <li><a href="AprendeM.html">Aprende más</a></li>
+                <li><a href="chatbot.html">ChatBot</a></li>
+                <li><a href="https://www.ococalli.com/">Ococalli Oficial</a></li>
+            </ul>
+        </nav>
+    </header>
+<br><br><br><br><br><br><br><br>
+
+
+<div class="container">
+    <h1>Emparejamiento de Conceptos Agroecológicos</h1>
+    <p>Empareja los términos con su definición:</p>
+    <div class="game-board">
+        <div class="column">
+            <h2>Términos</h2>
+            <div id="terms"></div> <!-- Se generan dinámicamente -->
+        </div>
+        <div class="column">
+            <h2>Definiciones</h2>
+            <div id="definitions"></div> <!-- Se generan dinámicamente -->
+        </div>
+    </div>
+    <button id="checkButton" onclick="checkAnswers()">Revisar Respuestas</button>
+    <p id="message"></p>
+    <button id="restartButton" onclick="restartGame()" style="display:none;">Reiniciar</button>
+</div>
+    <script src="Js/juntar_Terminos.js"></script>
+
+
+<br><br>
+    <footer>
+        <div class="footer-logo">
+            <a href="index.html"><img src="Images/Logo.png" alt="Logo"></a>
+        </div>
+        <p class ="footer">&copy; 2024 Ococalli. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

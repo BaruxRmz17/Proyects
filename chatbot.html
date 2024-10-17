@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotCalli</title>
+    <link rel="stylesheet" href="Css/chatbot.css">
+    <link rel="stylesheet" href="Css/Menu_Footer.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="Images/Logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Nuestros Productos</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+                <li><a href="AprendeM.html">Aprende más</a></li>
+                <li><a href="chatbot.html">ChatBot</a></li>
+                <li><a href="https://www.ococalli.com/">Ococalli Oficial</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br><br><br><br>
+
+    <div class="chat-container">
+        <div id="chatbox">
+            <div id="messages"></div>
+        </div>
+        <!-- Botones de preguntas frecuentes -->
+        <div class="faq-buttons">
+            <button class="faq-button" onclick="sendFAQ('¿Qué es agroecología?')">¿Qué es agroecología?</button>
+            <button class="faq-button" onclick="sendFAQ('¿Diferencias entre agroecología y productos comerciales?')">¿Diferencias entre agroecología y productos comerciales?</button>
+            <button class="faq-button" onclick="sendFAQ('¿Beneficios?')">¿Beneficios?</button>
+            <button class="faq-button" onclick="sendFAQ('¿Información de verduras?')">¿Información de verduras?</button>
+            <button class="faq-button" onclick="sendFAQ('¿Qué es Ococalli?')">¿Qué es Ococalli?</button>
+            <button class="faq-button" onclick="sendFAQ('¿Cómo se cuida el suelo en la agroecología?')">¿Cómo se cuida el suelo en la agroecología?</button>
+            <button class="faq-button" onclick="sendFAQ('¿Qué tipos de abono se utilizan?')">¿Qué tipos de abono se utilizan?</button>
+            <button class="faq-button" onclick="sendFAQ('¿Impacto en la salud?')">¿Impacto en la salud?</button>
+
+            <input type="text" id="userInput" placeholder="Escribe un mensaje..." onkeypress="checkEnter(event)">
+            <br>
+            <button id="sendButton">Enviar</button>
+
+            <br>
+            <div class="Borrar">
+                <button class="faq-button1" onclick="clearChat()">Borrar Chat</button>
+            </div>
+    
+        </div>
+    </div>
+    
+
+    <script src="Js/chatbot.js"></script>
+ 
+
+<br><br>
+    <footer>
+        <div class="footer-logo">
+            <a href="index.html"><img src="Images/Logo.png" alt="Logo"></a>
+        </div>
+        <p class ="footer">&copy; 2024 Ococalli. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+
+.container {
+max-width: 600px;
+margin: auto;
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+text-align: center;
+}
+
+
+#game-board {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 10px;
+margin: 20px 0;
+}
+
+
+.card {
+background-color: #e0e0e0;
+border-radius: 5px;
+text-align: center;
+padding: 20px;
+cursor: pointer;
+font-size: 20px;
+transition: background-color 0.3s;
+}
+
+
+.card.flipped {
+background-color: #81c784;
+}
+
+
+#restart-btn {
+display: block;
+margin: 20px auto;
+padding: 10px 15px;
+background-color: #28a745;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+#restart-btn:hover {
+background-color: #218838;
+}
+
+
+#message {
+text-align: center;
+font-weight: bold;
+margin-top: 20px;
+}
+/* Media Queries para Responsividad */
+
+@media (max-width: 768px) {
+body {
+    padding-top: 60px; /* Por ejemplo, un valor menor para móviles */
+}
+}
+
+
+@media (max-width: 1024px) {
+
+.container {
+    width: 90%; /* Ajusta el ancho en pantallas medianas */
+    padding: 15px; /* Reduce el padding */
+}
+
+h1 {
+    font-size: 24px; /* Reduce el tamaño del título */
+}
+
+#game-board {
+    grid-template-columns: repeat(3, 1fr); /* Ajusta el número de columnas en pantallas medianas */
+    gap: 10px; /* Mantiene el espacio entre las tarjetas */
+}
+
+.card {
+    padding: 15px; /* Reduce el padding en las tarjetas */
+    font-size: 18px; /* Ajusta el tamaño del texto en las tarjetas */
+}
+
+#restart-btn {
+    padding: 8px 12px; /* Ajusta el padding del botón */
+    font-size: 16px; /* Reduce el tamaño del texto del botón */
+}
+
+#message {
+    font-size: 18px; /* Ajusta el tamaño del mensaje */
+}
+}
+
+@media (max-width: 768px) {
+.container {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    padding: 10px; /* Reduce el padding */
+}
+
+#game-board {
+    grid-template-columns: repeat(2, 1fr); /* Cambia el número de columnas a 2 en pantallas pequeñas */
+}
+
+.card {
+    padding: 10px; /* Reduce el padding de las tarjetas */
+    font-size: 16px; /* Ajusta el tamaño de la fuente en las tarjetas */
+}
+
+#restart-btn {
+    padding: 6px 10px; /* Reduce el padding del botón */
+    font-size: 14px; /* Ajusta el tamaño del botón */
+}
+
+#message {
+    font-size: 16px; /* Reduce el tamaño del mensaje */
+}
+}
+
+@media (max-width: 480px) {
+.container {
+    padding: 5px; /* Reduce el padding al mínimo en pantallas muy pequeñas */
+}
+
+#game-board {
+    grid-template-columns: 1fr; /* Una sola columna en pantallas muy pequeñas */
+}
+
+.card {
+    padding: 8px; /* Reduce aún más el padding en las tarjetas */
+    font-size: 14px; /* Ajusta el tamaño de la fuente en las tarjetas */
+}
+
+#restart-btn {
+    padding: 5px 8px; /* Reduce el tamaño y el padding del botón */
+    font-size: 12px; /* Ajusta el tamaño del texto del botón */
+}
+
+#message {
+    font-size: 14px; /* Ajusta el tamaño del mensaje */
+}
+}

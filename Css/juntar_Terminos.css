@@ -1,0 +1,77 @@
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.game-board {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.column {
+    width: 45%;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.term, .definition {
+    background-color: #e0f7fa;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #00897b;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.definition {
+    background-color: #fff3e0;
+}
+
+#checkButton, #restartButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #00897b;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#checkButton:hover, #restartButton:hover {
+    background-color: #00695c;
+}
+
+#message {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px; /* Por ejemplo, un valor menor para móviles */
+    }
+}
